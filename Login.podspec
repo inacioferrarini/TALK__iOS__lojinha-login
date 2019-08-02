@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/**/*.swift"
+    ss.resources = ["Sources/**/*.storyboard"]
     ss.dependency 'Common'
     ss.framework  = "Foundation"
  end
